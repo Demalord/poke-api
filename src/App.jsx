@@ -1,9 +1,7 @@
-import { BrowserRouter as Router, Route, Routes, Link, useParams } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom'
 import './App.css'
-
-function Inicio() {
-  return <h1>Inicio</h1>
-}
+import Inicio from './components/inicio'
+import Pokemon from './components/pokemon'
 
 function Coleccion() {
   return <h1>Colección</h1>
@@ -19,11 +17,6 @@ function Info() {
 
 function Usuario() {
   return <h1>Usuarios</h1>
-}
-
-function Pokemon() {
-  const { name } = useParams()
-  return <h1>Pokemon: {name}</h1>
 }
 
 function App() {
