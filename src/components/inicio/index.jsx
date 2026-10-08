@@ -8,6 +8,8 @@ function Inicio() {
   const navigate = useNavigate();
   const [todoslospokes, setTodoslospokes] = useState([]);
   const [busqueda, setBusqueda] = useState('');
+  const [tipopoke, setTipopoke] = useState('All')
+
 
   let resultados = todoslospokes;
   if (busqueda.length >= 3 && isNaN(busqueda)){
@@ -25,6 +27,15 @@ function Inicio() {
      if (todoslospokes.length === 0) {
     return <p>Cargando...</p>;
   }
+
+    const tipos = [
+    'All',
+    'normal', 'fighting', 'flying', 'poison', 'ground', 'rock',
+    'bug', 'ghost', 'steel', 'fire', 'water', 'grass', 'electric',
+    'psychic', 'ice', 'dragon', 'dark', 'fairy', 'stellar', 'shadow', 'unknown'
+  ]
+
+
   return (
     <>
         <input
