@@ -2,14 +2,12 @@ import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom'
 import './App.css'
 import Inicio from './components/inicio'
 import Pokemon from './components/pokemon'
+import Favoritos from './components/favoritos'
 
 function Coleccion() {
   return <h1>Colección</h1>
 }
 
-function Favoritos() {
-  return <h1>Favoritos</h1>
-}
 
 function Info() {
   return <h1>Info</h1>
