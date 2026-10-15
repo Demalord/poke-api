@@ -1,9 +1,24 @@
-.seleccionado{
+.seleccionado {
     text-align: center;
     background-color: darkgrey;
     border: 2px solid black;
-    border-radius: 15%;
-    max-width: fit-content;
+    border-radius: 20px;
+    max-width: min(90%, 500px);
     margin: 20px auto 90px;
     padding: 20px 40px;
+}
+
+.seleccionado img {
+    max-width: 100%;
+    height: auto;
+}
+
+.seleccionado h1 {
+    text-transform: capitalize;
+}
+
+@media (max-width: 600px) {
+    .seleccionado {
+        padding: 16px;
+    }
 }

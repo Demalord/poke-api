@@ -1,6 +1,36 @@
+.c-filtro {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6px;
+    max-width: 900px;
+    margin: 16px auto 0;
+    padding: 0 16px;
+}
+
+.c-filtro button {
+    padding: 6px 10px;
+    border: none;
+    border-radius: 6px;
+    background-color: #e0e0e0;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+.c-buscador {
+    display: block;
+    width: calc(100% - 32px);
+    max-width: 868px;
+    margin: 16px auto 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
 .c-lista {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 16px;
     max-width: 900px;
     margin: 0 auto;
@@ -32,4 +62,22 @@
 .c-lista-pokemon p {
     margin: 4px 0;
     text-transform: capitalize;
+}
+
+@media (max-width: 900px) {
+    .c-lista {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .c-lista {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .c-filtro button {
+        padding: 4px 8px;
+        font-size: 0.8rem;
+    }
 }

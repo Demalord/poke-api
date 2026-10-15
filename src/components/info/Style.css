@@ -1,0 +1,76 @@
+.c-info {
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+    background-color: #2a2a3a;
+    color: white;
+}
+
+.c-info-fondo {
+    position: absolute;
+    inset: -40px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    filter: blur(14px) brightness(0.6);
+}
+
+.c-info-fondo img {
+    width: 100%;
+    height: auto;
+}
+
+.c-info-contenido {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 40px 16px 110px;
+}
+
+.c-info-titulo {
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+    font-size: clamp(3rem, 12vw, 6rem);
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+.c-info-autor {
+    font-size: clamp(1rem, 3vw, 1.4rem);
+    margin: 4px 0 16px;
+}
+
+.c-info-pikachu {
+    width: clamp(160px, 40vw, 280px);
+    height: auto;
+}
+
+.c-info-pokemon {
+    font-family: Impact, 'Arial Black', sans-serif;
+    font-size: clamp(2.5rem, 11vw, 5rem);
+    color: #FFCB05;
+    -webkit-text-stroke: 3px #3D7DCA;
+    text-shadow: 4px 4px 0 #1F3370;
+    margin: 0 0 24px;
+}
+
+.c-info-caja {
+    background-color: #1F3370;
+    border-radius: 12px;
+    padding: 20px 24px;
+    max-width: 90%;
+    width: 420px;
+    font-size: clamp(1.1rem, 3.5vw, 1.5rem);
+}
+
+.c-info-link {
+    color: white;
+    text-decoration: none;
+    font-size: clamp(1rem, 3vw, 1.3rem);
+    margin-top: 24px;
+}
+
+.c-info-version {
+    margin: 8px 0 0;
+    font-size: 1.1rem;
+}

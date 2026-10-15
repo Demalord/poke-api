@@ -3,15 +3,8 @@ import './App.css'
 import Inicio from './components/inicio'
 import Pokemon from './components/pokemon'
 import Favoritos from './components/favoritos'
-
-function Coleccion() {
-  return <h1>Colección</h1>
-}
-
-
-function Info() {
-  return <h1>Info</h1>
-}
+import Info from './components/info'
+import Coleccion from './components/coleccion'
 
 function Usuario() {
   return <h1>Usuarios</h1>
