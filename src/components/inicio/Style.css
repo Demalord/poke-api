@@ -3,9 +3,9 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 6px;
+    width: 92%;
     max-width: 900px;
     margin: 16px auto 0;
-    padding: 0 16px;
 }
 
 .c-filtro button {
@@ -19,8 +19,8 @@
 
 .c-buscador {
     display: block;
-    width: calc(100% - 32px);
-    max-width: 868px;
+    width: 92%;
+    max-width: 900px;
     margin: 16px auto 0;
     padding: 10px;
     border: 1px solid #ccc;
@@ -29,21 +29,24 @@
 }
 
 .c-lista {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 2%;
+    row-gap: 16px;
+    width: 92%;
     max-width: 900px;
     margin: 0 auto;
-    padding: 16px 16px 90px;
+    padding: 16px 0 90px;
 }
 
 .c-lista-pokemon {
+    width: 23.5%;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: #f5f5f5;
     border-radius: 12px;
-    padding: 12px;
+    padding: 3% 2%;
     cursor: pointer;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s;
@@ -54,26 +57,31 @@
 }
 
 .c-lista-pokemon img {
-    width: 100%;
-    max-width: 150px;
+    width: 80%;
     height: auto;
 }
 
 .c-lista-pokemon p {
+    width: 100%;
     margin: 4px 0;
+    text-align: center;
     text-transform: capitalize;
+    overflow-wrap: anywhere;
 }
 
 @media (max-width: 900px) {
-    .c-lista {
-        grid-template-columns: repeat(3, 1fr);
+    .c-lista-pokemon {
+        width: 32%;
     }
 }
 
 @media (max-width: 600px) {
     .c-lista {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
+        row-gap: 10px;
+    }
+
+    .c-lista-pokemon {
+        width: 49%;
     }
 
     .c-filtro button {

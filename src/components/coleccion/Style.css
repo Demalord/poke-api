@@ -1,9 +1,9 @@
 .coleccion {
-  width: 100%;
+  width: 92%;
   max-width: 480px;
   min-height: 100vh;
   margin: 0 auto;
-  padding: 24px 16px 110px;
+  padding: 24px 0 110px;
   color: #202632;
   font-family: system-ui, sans-serif;
 }
@@ -61,7 +61,7 @@
 .coleccion-nuevos {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 10px;
+  gap: 3%;
   margin-bottom: 22px;
 }
 
@@ -88,15 +88,17 @@
 }
 
 .coleccion-nuevo img {
-  width: 72px;
-  height: 72px;
+  width: 60%;
+  height: auto;
+  aspect-ratio: 1;
   object-fit: contain;
 }
 
 .coleccion-album {
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
-  gap: 7px;
+  gap: 1.5%;
+  row-gap: 7px;
   padding-bottom: 24px;
 }
 
@@ -127,17 +129,12 @@
 }
 
 .coleccion-pokemon img {
-  width: 38px;
-  height: 38px;
+  width: 70%;
+  height: auto;
   object-fit: contain;
 }
 
 @media (max-width: 350px) {
-  .coleccion {
-    padding-right: 12px;
-    padding-left: 12px;
-  }
-
   .coleccion-album {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }

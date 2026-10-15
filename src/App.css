@@ -6,22 +6,29 @@
     z-index: 10;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
-    gap: 10px;
+    gap: 2%;
     width: 100%;
-    padding: 15px;
+    padding: 15px 2%;
 }
 
 .c-menu a {
     color: #222;
     text-decoration: none;
     font-weight: bold;
+    text-align: center;
 }
 
 @media (max-width: 600px) {
     .c-menu {
-        gap: 8px;
-        padding: 10px;
-        font-size: 0.9rem;
+        justify-content: space-between;
+        gap: 0;
+        padding: 12px 1%;
+    }
+
+    .c-menu a {
+        width: 20%;
+        font-size: 0.75rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 }

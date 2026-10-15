@@ -25,7 +25,7 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 40px 16px 110px;
+    padding: 40px 5% 110px;
 }
 
 .c-info-titulo {
@@ -41,7 +41,8 @@
 }
 
 .c-info-pikachu {
-    width: clamp(160px, 40vw, 280px);
+    width: 60%;
+    max-width: 280px;
     height: auto;
 }
 
@@ -58,8 +59,8 @@
     background-color: #1F3370;
     border-radius: 12px;
     padding: 20px 24px;
-    max-width: 90%;
-    width: 420px;
+    width: 90%;
+    max-width: 420px;
     font-size: clamp(1.1rem, 3.5vw, 1.5rem);
 }
 
