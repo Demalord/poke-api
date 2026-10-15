@@ -12,7 +12,7 @@ function Usuario() {
 
 function App() {
   return (
-    <Router>
+    <Router basename={import.meta.env.BASE_URL}>
       <nav className='c-menu'>
         <Link to='/'>Inicio</Link>
         <Link to='/coleccion'>Coleccion</Link>
